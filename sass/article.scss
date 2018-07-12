@@ -1,0 +1,196 @@
+@import "variables";
+.article{
+  width: $content-widht;
+  height: auto;
+  padding: 40px 70px 25px 70px;
+  background-color: $color-grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  .content{
+    width: calc(70% - 40px);
+    height: auto;
+    padding: 0 20px 20px 20px;
+    background-color: $color-white;
+    h2{
+      margin: 0;
+      padding: 25px 0;
+      font-family: "Times New Roman";
+      font-weight: bold;
+      font-size: 50px;
+      color: $color-black;
+    }
+    .text-article{
+      margin: 0;
+      padding: 0 0 32px 0;
+      font-family: "Trebuchet MS regular";
+      font-size: 17px;
+      color: $color-dark-grey;
+    }
+  }
+  .article-group{
+    width: 70%;
+    height: auto;
+    margin: -105px 0 25px 0;
+    display: flex;
+    justify-content: space-between;
+    .small-article{
+      width: 43%;
+      height: auto;
+      padding: 25px 20px;
+      background-color: $color-white;
+      p{
+        margin: 0;
+        font-family: "Trebuchet MS regular";
+        font-size: 17px;
+        color: $color-dark-grey;
+      }
+    }
+    .link-article{
+      h3{
+        margin: 0;
+        padding: 0 0 20px 0;
+        font-family: "Times New Roman";
+        font-size: 27px;
+        font-weight: bold;
+        color: $color-black;
+      }
+      ul{
+        margin: 0;
+        padding: 0;
+        li{
+          list-style: none;
+          a{
+            text-decoration: none;
+            font-family: "Trebuchet MS regular";
+            font-size: 17px;
+            color: $color-link;
+          }
+        }
+        li:nth-child(2){
+          border-top: 1px solid $color-dark-grey;
+          border-bottom: 1px solid $color-dark-grey;
+          margin: 10px 0;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+  .highlights-block{
+     width: 100%;
+     background-color: $highlights-block-background;
+    display: flex;
+    justify-content: space-between;
+    .highlights-block-article{
+      width: 30%;
+      height: auto;
+      margin: 0;
+      padding: 25px 20px;
+      p{
+        margin: 0;
+        font-family: "Trebuchet MS regular";
+        font-size: 17px;
+        color: $color-dark-grey;
+      }
+    }
+  }
+  .form-block{
+    width: calc(30% - 40px);
+    height: auto;
+    padding: 10px 20px 0 20px;
+    h3{
+      margin: 0;
+      padding: 0 0 20px 0;
+      font-family: "Times New Roman";
+      font-size: 30px;
+      font-weight: bold;
+      color: $color-black;
+      border-bottom: 3px solid $color-black;
+    }
+    .form-article{
+      margin: 0;
+      padding: 20px 0 35px 0;
+      font-family: "Trebuchet MS regular";
+      font-size: 17px;
+      color: $color-dark-grey;
+    }
+    .form{
+      width: calc(100% - 40px);
+      height: auto;
+      padding: 20px;
+      border: 1px solid $color-dark-grey;
+      span{
+        display: block;
+        font-family: "Trebuchet MS regular";
+        font-size: 17px;
+        color: $color-black;
+      }
+      input[type=text], textarea{
+        width: calc(100% - 30px);
+        height: 30px;
+        margin: 10px 0 20px 0;
+        padding: 0 7px;
+        border: 1px solid $color-dark-grey;
+        font-family: "Trebuchet MS regular";
+        font-size: 17px;
+        color: $color-dark-grey;
+        }
+      textarea{
+        height: 130px;
+        padding-top: 10px;
+      }
+      input[type=submit]{
+        height: 35px;
+        width: 110px;
+        background-color: $color-pink;
+        border: none;
+        font-family: "Trebuchet MS regular";
+        font-size: 17px;
+        text-transform: uppercase;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .article{
+    .article-group{
+      flex-direction: column;
+      .small-article{
+        width: calc(100% - 40px);
+        height: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1275px){
+  .article{
+    .article-group{
+      margin-top: -85px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .article{
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 80px);
+    padding-left: 40px;
+    padding-right: 40px;
+    .content, .form-block, .article-group, .highlights-block{
+      width: 100%;
+    }
+    .article-group{
+      margin-top: 25px;
+    }
+    .highlights-block{
+      flex-direction: column;
+      .highlights-block-article{
+        width: calc(100% - 40px);
+      }
+    }
+  }
+}
+

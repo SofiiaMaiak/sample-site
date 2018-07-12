@@ -1,0 +1,417 @@
+.article {
+  width: calc(100% - 140px);
+  height: auto;
+  padding: 40px 70px 25px 70px;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.article .content {
+  width: calc(70% - 40px);
+  height: auto;
+  padding: 0 20px 20px 20px;
+  background-color: #ffffff;
+}
+
+.article .content h2 {
+  margin: 0;
+  padding: 25px 0;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  font-size: 50px;
+  color: #000000;
+}
+
+.article .content .text-article {
+  margin: 0;
+  padding: 0 0 32px 0;
+  font-family: "Trebuchet MS regular";
+  font-size: 17px;
+  color: #4d4d4d;
+}
+
+.article .article-group {
+  width: 70%;
+  height: auto;
+  margin: -105px 0 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article .article-group .small-article {
+  width: 43%;
+  height: auto;
+  padding: 25px 20px;
+  background-color: #ffffff;
+}
+
+.article .article-group .small-article p {
+  margin: 0;
+  font-family: "Trebuchet MS regular";
+  font-size: 17px;
+  color: #4d4d4d;
+}
+
+.article .article-group .link-article h3 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: "Times New Roman";
+  font-size: 27px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.article .article-group .link-article ul {
+  margin: 0;
+  padding: 0;
+}
+
+.article .article-group .link-article ul li {
+  list-style: none;
+}
+
+.article .article-group .link-article ul li a {
+  text-decoration: none;
+  font-family: "Trebuchet MS regular";
+  font-size: 17px;
+  color: #0071bc;
+}
+
+.article .article-group .link-article ul li:nth-child(2) {
+  border-top: 1px solid #4d4d4d;
+  border-bottom: 1px solid #4d4d4d;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.article .highlights-block {
+  width: 100%;
+  background-color: #cccccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article .highlights-block .highlights-block-article {
+  width: 30%;
+  height: auto;
+  margin: 0;
+  padding: 25px 20px;
+}
+
+.article .highlights-block .highlights-block-article p {
+  margin: 0;
+  font-family: "Trebuchet MS regular";
+  font-size: 17px;
+  color: #4d4d4d;
+}
+
+.article .form-block {
+  width: calc(30% - 40px);
+  height: auto;
+  padding: 10px 20px 0 20px;
+}
+
+.article .form-block h3 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  font-family: "Times New Roman";
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  border-bottom: 3px solid #000000;
+}
+
+.article .form-block .form-article {
+  margin: 0;
+  padding: 20px 0 35px 0;
+  font-family: "Trebuchet MS regular";
+  font-size: 17px;
+  color: #4d4d4d;
+}
+
+.article .form-block .form {
+  width: calc(100% - 40px);
+  height: auto;
+  padding: 20px;
+  border: 1px solid #4d4d4d;
+}
+
+.article .form-block .form span {
+  display: block;
+  font-family: "Trebuchet MS regular";
+  font-size: 17px;
+  color: #000000;
+}
+
+.article .form-block .form input[type=text],
+.article .form-block .form textarea {
+  width: calc(100% - 30px);
+  height: 30px;
+  margin: 10px 0 20px 0;
+  padding: 0 7px;
+  border: 1px solid #4d4d4d;
+  font-family: "Trebuchet MS regular";
+  font-size: 17px;
+  color: #4d4d4d;
+}
+
+.article .form-block .form textarea {
+  height: 130px;
+  padding-top: 10px;
+}
+
+.article .form-block .form input[type=submit] {
+  height: 35px;
+  width: 110px;
+  background-color: #d3135a;
+  border: none;
+  font-family: "Trebuchet MS regular";
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .article .article-group {
+    flex-direction: column;
+  }
+
+  .article .article-group .small-article {
+    width: calc(100% - 40px);
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1275px) {
+  .article .article-group {
+    margin-top: -85px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .article {
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 80px);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .article .content,
+  .article .form-block,
+  .article .article-group,
+  .article .highlights-block {
+    width: 100%;
+  }
+
+  .article .article-group {
+    margin-top: 25px;
+  }
+
+  .article .highlights-block {
+    flex-direction: column;
+  }
+
+  .article .highlights-block .highlights-block-article {
+    width: calc(100% - 40px);
+  }
+}
+@font-face {
+  font-family: 'Trebuchet MS bold';
+  src: url("../fonts/trebucbd.ttf");
+}
+
+@font-face {
+  font-family: 'Trebuchet MS regular';
+  src: url("../fonts/trebuc.ttf");
+}
+footer {
+  width: calc(100% - 140px);
+  padding: 20px 70px;
+  height: auto;
+  background-color: #666666;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+footer ul li {
+  padding: 0 10px 0 10px;
+  list-style: none;
+  border-left: 1px solid #ffffff;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-family: "Trebuchet MS regular";
+  font-size: 12px;
+  color: #ffffff;
+}
+
+footer ul li:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+footer .footer-article {
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer .footer-article p {
+  width: 83%;
+  margin: 0;
+  font-family: "Trebuchet MS regular";
+  font-size: 13px;
+  color: #e6e6e6;
+}
+
+footer .footer-article h2 {
+  margin: 0;
+  width: 17%;
+  font-family: "Trebuchet MS bold";
+  font-size: 32px;
+  color: #ffffff;
+  text-align: right;
+}
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Trebuchet MS bold';
+  src: url("../fonts/trebucbd.ttf");
+}
+
+@font-face {
+  font-family: 'Trebuchet MS regular';
+  src: url("../fonts/trebuc.ttf");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body header {
+  width: 100%;
+  height: 117px;
+  background-color: #d3135a;
+}
+
+body header .header-components {
+  width: calc(100% - 140px);
+  height: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px 20px 70px;
+}
+
+body header .header-components .header-logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+body header .header-components .header-logo h1 {
+  padding: 0;
+  margin: 0 0 -10px 0;
+  font-family: "Trebuchet MS bold";
+  font-weight: bold;
+  font-size: 59px;
+  color: #ffc2dd;
+}
+
+body header .header-components .header-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+body header .header-components .header-menu ul {
+  margin: 0;
+}
+
+body header .header-components .header-menu ul li {
+  display: inline;
+  padding: 0 0 0 20px;
+}
+
+body header .header-components .header-menu ul li a {
+  text-decoration: none;
+  font-family: "Trebuchet MS regular";
+  font-weight: 100;
+}
+
+body header .header-components .header-menu .header-menu-top a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+body header .header-components .header-menu .header-menu-bottom {
+  position: relative;
+}
+
+body header .header-components .header-menu .header-menu-bottom a {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+body header .header-components .header-menu .header-menu-bottom a:hover {
+  color: #4d4d4d;
+}
+
+body header .header-components .header-menu .header-menu-bottom .dropdown-content {
+  display: none;
+  position: absolute;
+  width: 150px;
+  height: auto;
+  margin: 20px 0 0 0;
+  left: 30px;
+  background-color: #4d4d4d;
+}
+
+body header .header-components .header-menu .header-menu-bottom .dropdown-content:after {
+  content: '';
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 69px;
+  top: -24px;
+  /* Положение треугольника */
+  border: 12px solid transparent;
+  /* Прозрачные границы */
+  border-bottom: 12px solid #4d4d4d;
+  /* Добавляем треугольник */
+}
+
+body header .header-components .header-menu .header-menu-bottom .dropdown-content a {
+  text-decoration: none;
+  font-family: "Trebuchet MS";
+  font-size: 14px;
+  color: #ffffff;
+  padding: 7px 0 7px 5px;
+}
+
+body header .header-components .header-menu .header-menu-bottom .dropdown-content a:hover {
+  background-color: #666666;
+}
+
+@media screen and (max-width: 856px) {
+  body header .header-components .header-logo h1 {
+    font-size: 30px;
+  }
+
+  body header .header-components .header-menu .header-menu-bottom a {
+    font-size: 15px;
+  }
+}

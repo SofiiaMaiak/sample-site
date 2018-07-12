@@ -1,0 +1,114 @@
+@import "variables";
+@import "fonts";
+body{
+  padding: 0;
+  margin: 0;
+  header{
+    width: 100%;
+    height: 117px;
+    background-color: $color-pink;
+    .header-components{
+      width: $content-widht;
+      height: calc(100% - 40px);
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 70px 20px 70px;
+      .header-logo{
+        display: flex;
+        align-items: flex-end;
+        h1{
+          padding: 0;
+          margin: 0 0 -10px 0;
+          font-family: "Trebuchet MS bold";
+          font-weight: bold;
+          font-size: 59px;
+          color: $color-logo;
+        }
+      }
+      .header-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        ul{
+          margin: 0;
+          li{
+            display: inline;
+            padding: 0 0 0 20px;
+            a{
+              text-decoration: none;
+              font-family: "Trebuchet MS regular";
+              font-weight: 100;
+            }
+          }
+        }
+        .header-menu-top{
+          a{
+            font-size: 14px;
+            font-weight: bold;
+            color: $color-black;
+          }
+        }
+        .header-menu-bottom{
+          position: relative;
+          a{
+            font-size: 20px;
+            color: $color-white;
+            &:hover{
+              color: $color-dark-grey;
+            }
+          }
+          .dropdown-content{
+            display: none;
+            //display: flex;
+            //flex-direction: column;
+            position: absolute;
+            width: 150px;
+            height: auto;
+            margin: 20px 0 0 0;
+            left: 30px;
+            background-color: $background-dropmenu;
+            &:after{
+              content: '';
+              position: absolute; /* Абсолютное позиционирование */
+              left: 69px;  top: -24px;/* Положение треугольника */
+              border: 12px solid transparent; /* Прозрачные границы */
+              border-bottom: 12px solid $background-dropmenu; /* Добавляем треугольник */
+            }
+            a{
+              text-decoration: none;
+              font-family: "Trebuchet MS";
+              font-size: 14px;
+              color: $color-white;
+              padding: 7px 0 7px 5px;
+              &:hover{
+                background-color: $color-footer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 856px){
+  body{
+    header{
+      .header-components{
+        .header-logo{
+          h1{
+            font-size: 30px;
+          }
+        }
+        .header-menu{
+          .header-menu-bottom{
+            a{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
